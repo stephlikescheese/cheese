@@ -1,0 +1,178 @@
+@font-face{
+	font-family: Duwhoers;
+	src: url(https://dl.dropbox.com/s/45m0nabe98aztrw/swistblnk_duwhoers_brush-webfont.woff);
+}
+
+body { margin:auto; }
+
+div.container {
+	background-image: url(https://66.media.tumblr.com/daca9e353e8bf5b2f6e31a9b2cace181/tumblr_okbx10jJCF1rr0vrso1_400.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	padding-bottom: 200px;
+}
+
+div.nav {
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+}
+
+	.nav .logo {
+		background-image: url(http://www.pngmart.com/files/8/Cheese-PNG-Pic-Background.png);
+		background-color: rgba(255,255,255,0.4);
+		background-size:150px;
+		background-repeat:no-repeat;
+		background-position:center;
+		width:175px;
+		height:175px;
+		border-radius:175px;
+		box-shadow:0 0 100px #fff;
+		margin:20px 100px;
+	}
+	
+	.nav .links {
+		display:flex;
+		flex-flow:row wrap;
+		align-items:center;
+		justify-content:space-between;
+		width:calc(100% - 175px);
+	}
+.content, .credits {
+	display:grid;
+	box-sizing: border-box;
+	min-width:900px;
+	max-width:80%;
+	margin:auto;
+	grid-row-gap:40px;
+	grid-column-gap:40px;
+	padding-bottom: 40px;
+}
+.content > div, .credits {
+	background-color:#cbb69ecc;
+	padding:20px;
+	border-radius:20px;
+	border:1px dashed #967f64;
+	box-sizing: border-box;
+}
+		.welcome, .about { grid-row:1; }
+
+		.welcome {
+			grid-column-start:1;
+			grid-column-end:3;
+		}
+
+		.about {
+			grid-row:1;
+			grid-column-start:3;
+			grid-column-end:4;
+		}
+		
+		.goals, .faq { grid-row-start:2; }
+
+		.goals {
+			grid-row-end:3;
+			grid-column-start:1;
+			grid-column-end:2;
+		}
+
+		.faq {
+			grid-row-end:4;
+			grid-column-start:2;
+			grid-column-end:4;
+		}
+
+			.faq div {
+				max-height:100px;
+				overflow:hidden;
+				transition: max-height 2s ease-in;
+				margin-bottom:20px;
+				position:relative;
+			}
+
+			.faq .faq-box:hover {
+				max-height:1000px;
+				transition: max-height 6s ease-out;
+			}
+
+
+/* TEXT */
+
+	h1, h2, .nav a { 
+		font-family: Duwhoers;
+		letter-spacing:2px;
+	}
+
+	h1, .nav a { font-size: 40px; }
+	h2 { font-size: 24px; }
+	
+	h1, h2 {
+		display:block;
+		color:#fff;
+		margin:0 20px 0;
+		height:100px;
+		display:flex;
+		align-items:center;
+	}
+
+	.nav a {
+		display:block;
+		width:100px;
+		height: 20px;
+		padding: 0 50px;
+		text-align:center;
+		color: #b19b83;
+		transform: rotate(0);
+		transition:all 1s ease;
+		text-decoration:none;
+	}
+
+		.nav a:hover {
+			font-size:50px;
+			color: #ffffff;
+			transform: rotate(360deg);
+			transition:all 1s ease;
+		}
+
+	div p {
+		color:#52402b;
+		font-size:11px;
+	}
+
+	.credits p { text-align: center; }
+
+/* FPAW PAGE LAYOUT REMOVAL */
+ 
+    div#fpaw_layout_holder { width:100%; margin:0px auto 0px auto; }
+    div#fpaw_layout_content_holder { width:100%; }
+    div#fpaw_layout_content { width:100%; left:0px;}
+    div#fpaw_layout_content_holder { width:100%; }
+    div#fpaw_layout_column_2 { width:100%; height:100%; margin:0px auto 0px auto;}
+    div#fpaw_layout_minheight { display:none; }
+    #fpaw_layout_column_1 { display:none; }
+    #top_bar { display:none; }
+    #fpaw_layout_footer { display:none; }
+    #fpaw_layout_inner_footer { display:none; }
+    #sharing_isnt_caring { display:none; }
+    #fpaw_layout_footer_text { display:none; }
+    #fpaw_layout_end { display:none; }
+    #fpaw_layout_column_3 { display: none; }
+    #fpaw_layout_top_holder { display:none; }
+    #fpaw_layout_top_holder { display:none; }
+    #fpaw_layout { display:none; }
+    .fpaw_layout_footer_section { display:none; }
+    .fpaw_layout_footer_subsection { display: none; }
+    .footer_legal { display:none; }
+    .text_logout { display:none; }
+    .tutorial { display:none; }
+    .clearer { display:none; }
+    .footer_spacer { display:none; }
+    .column_header { display:none; }
+    .column_section { display:none; }
+    .link_category { display:none; }
+    #quick_links { display:none; }
+    .plain_subnav { display:none; }
+    h3 {display:none;}
